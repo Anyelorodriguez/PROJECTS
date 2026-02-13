@@ -1,0 +1,1 @@
+plot(tiempo1,distancia1)

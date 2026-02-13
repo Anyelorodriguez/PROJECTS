@@ -1,0 +1,153 @@
+(ExpressProject "ele3oscilador"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[03/23/22]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (Allegro Netlist Directory "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\ele3oscilador.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\ele3oscilador-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ele3oscilador-pspicefiles\schematic1\asdfs.sim"
+        (DisplayName "SCHEMATIC1-asdfs")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ele3oscilador-pspicefiles\schematic1\pru.sim"
+        (DisplayName "SCHEMATIC1-pru")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\ele3oscilador-pspicefiles\schematic1\colpitts.sim"
+        (DisplayName "SCHEMATIC1-colpitts")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\ele3oscilador-pspicefiles\schematic1\pru.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LM324
+      (FullPartName "LM324.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LM741
+      (FullPartName "LM741.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LF351/301/TI
+      (FullPartName "LF351/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "0"))
+    (LF351
+      (FullPartName "LF351.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LF156
+      (FullPartName "LF156.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LM107/301/TI
+      (FullPartName "LM107/301/TI.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
+      (DeviceIndex "0"))
+    (Sw_tClose
+      (FullPartName "Sw_tClose.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (SWITCH
+      (FullPartName "SWITCH.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\IEC\DEVICE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "linkevil")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\dell\documents\uptc\orcad ele3\ele3oscilador.dsn")
+      (Path "Design Resources"
+         "c:\users\dell\documents\uptc\orcad ele3\ele3oscilador.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\users\dell\documents\uptc\orcad ele3\ele3oscilador.dsn"
+         "SCHEMATIC1" "PAGE3"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 128 0 482"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 836 24 500")
+        (Scroll "-79 0")
+        (Zoom "66")
+        (Occurrence "/"))
+      (Path "C:\USERS\DELL\DOCUMENTS\UPTC\ORCAD ELE3\ELE3OSCILADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 836 24 500")
+        (Scroll "-79 0")
+        (Zoom "66")
+        (Occurrence "/"))
+      (Path "C:\USERS\DELL\DOCUMENTS\UPTC\ORCAD ELE3\ELE3OSCILADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 836 24 500")
+        (Scroll "-79 0")
+        (Zoom "66")
+        (Occurrence "/"))
+      (Path "C:\USERS\DELL\DOCUMENTS\UPTC\ORCAD ELE3\ELE3OSCILADOR.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE3"))))

@@ -1,0 +1,27 @@
+ nombre de usuario: anyelo rodriguez
+ fecha de nacimiento: 29/5/2001
+ edad: 19
+ salario mensual: 100000
+ 10% salario: 10000
+
+
+ nombre de usuario: anyelo rodriguez
+ fecha de nacimiento: 29/5/2001
+ edad: 19
+ salario mensual: 100000
+ 10% salario: 10000
+
+
+ nombre de usuario: anyelo rodriguez
+ fecha de nacimiento: 29/5/2001
+ edad: 19
+ salario mensual: 100000
+ 10% salario: 10000
+
+
+ nombre de usuario: anyelo rodriguez
+ fecha de nacimiento: 29/5/2001
+ edad: 19
+ salario mensual: 100000
+ 10% salario: 10000
+

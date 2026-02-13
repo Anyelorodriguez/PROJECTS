@@ -1,0 +1,112 @@
+(ExpressProject "Design8"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[12/19/21]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\design8.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\design8-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\design8-pspicefiles\schematic1\ewf.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\design8-pspicefiles\schematic1\ewf.sim"
+        (DisplayName "SCHEMATIC1-ewf")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (PartMRUSelector
+    (LM556
+      (FullPartName "LM556.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (LM555C/TO
+      (FullPartName "LM555C/TO.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (LM555C/SO
+      (FullPartName "LM555C/SO.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (LM555C
+      (FullPartName "LM555C.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (LM555/TO
+      (FullPartName "LM555/TO.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (LM555/SO
+      (FullPartName "LM555/SO.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (LM555
+      (FullPartName "LM555.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\MISCLINEAR.OLB")
+      (DeviceIndex "0"))
+    (555alt
+      (FullPartName "555alt.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (555C
+      (FullPartName "555C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (555B
+      (FullPartName "555B.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANL_MISC.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Dell\Documents\UPTC\orcad ele3\design8.dsn")
+      (Path "Design Resources"
+         "C:\Users\Dell\Documents\UPTC\orcad ele3\design8.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Dell\Documents\UPTC\orcad ele3\design8.dsn" "SCHEMATIC1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 171 0 426"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 886 24 467")
+        (Scroll "69 0")
+        (Zoom "112")
+        (Occurrence "/"))
+      (Path "C:\USERS\DELL\DOCUMENTS\UPTC\ORCAD ELE3\DESIGN8.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

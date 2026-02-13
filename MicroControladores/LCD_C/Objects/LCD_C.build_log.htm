@@ -1,0 +1,285 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: anyelo rodriguez, UPTC, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\Dell\Documents\UPTC\uc\LCD_C\LCD_C.uvprojx
+Project File Date:  12/04/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+display.c(1): warning: In file included from...
+./board.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif // __board_H__
+                     ^
+display.c(2): warning: In file included from...
+./display.h(8): warning: no newline at end of file [-Wnewline-eof]
+#endif // __display_H__
+                       ^
+display.c(3): warning: In file included from...
+./tm4c123gh6pm.h(12713): warning: no newline at end of file [-Wnewline-eof]
+#endif // __TM4C123GH6PM_H__
+                            ^
+display.c(84): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIO_PORTB_DATA_R = display(unidad);
+                                          ~ ^~~~~~~~~~~~~~~
+display.c(87): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIO_PORTB_DATA_R = display(decena);
+                                          ~ ^~~~~~~~~~~~~~~
+display.c(91): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIO_PORTB_DATA_R = display(centena);
+                                          ~ ^~~~~~~~~~~~~~~~
+display.c(94): warning: implicit conversion changes signedness: 'int' to 'unsigned long' [-Wsign-conversion]
+                        GPIO_PORTB_DATA_R = display(umil);
+                                          ~ ^~~~~~~~~~~~~
+display.c(99): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+8 warnings generated.
+compiling display.c...
+board.c(1): warning: In file included from...
+./tm4c123gh6pm.h(12713): warning: no newline at end of file [-Wnewline-eof]
+#endif // __TM4C123GH6PM_H__
+                            ^
+board.c(2): warning: In file included from...
+./board.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif // __board_H__
+                     ^
+board.c(20): warning: variable 'nop' set but not used [-Wunused-but-set-variable]
+        int nop=0;
+            ^
+board.c(61): warning: variable 'nop' set but not used [-Wunused-but-set-variable]
+        int nop=0;
+            ^
+board.c(102): warning: variable 'nop' set but not used [-Wunused-but-set-variable]
+        int nop=0;
+            ^
+board.c(146): warning: variable 'nop' set but not used [-Wunused-but-set-variable]
+        int nop=0;
+            ^
+board.c(201): warning: implicit conversion changes signedness: 'volatile unsigned long' to 'int' [-Wsign-conversion]
+        return GPIO_PORTF_DATA_R;
+        ~~~~~~ ^~~~~~~~~~~~~~~~~
+./tm4c123gh6pm.h(701): note: expanded from macro 'GPIO_PORTF_DATA_R'
+#define GPIO_PORTF_DATA_R       (*((volatile unsigned long *)0x400253FC))
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+board.c(202): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+8 warnings generated.
+compiling board.c...
+main.c(4): warning: In file included from...
+./tm4c123gh6pm.h(12713): warning: no newline at end of file [-Wnewline-eof]
+#endif // __TM4C123GH6PM_H__
+                            ^
+main.c(5): warning: In file included from...
+./board.h(24): warning: no newline at end of file [-Wnewline-eof]
+#endif // __board_H__
+                     ^
+main.c(6): warning: In file included from...
+./display.h(8): warning: no newline at end of file [-Wnewline-eof]
+#endif // __display_H__
+                       ^
+main.c(7): warning: In file included from...
+./Nokia5110.h(537): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(8): warning: In file included from...
+./imagen.h(4): warning: no previous extern declaration for non-static variable 'Resistencia' [-Wmissing-variable-declarations]
+const char Resistencia[] = {
+           ^
+./imagen.h(4): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char Resistencia[] = {
+      ^
+./imagen.h(44): warning: no previous extern declaration for non-static variable 'condensador' [-Wmissing-variable-declarations]
+const char condensador[] = {
+           ^
+./imagen.h(44): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char condensador[] = {
+      ^
+./imagen.h(83): warning: no previous extern declaration for non-static variable 'a1' [-Wmissing-variable-declarations]
+const char a1[] = {
+           ^
+./imagen.h(83): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a1[] = {
+      ^
+./imagen.h(121): warning: no previous extern declaration for non-static variable 'a2' [-Wmissing-variable-declarations]
+const char a2[] = {
+           ^
+./imagen.h(121): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a2[] = {
+      ^
+./imagen.h(160): warning: no previous extern declaration for non-static variable 'a3' [-Wmissing-variable-declarations]
+const char a3[] = {
+           ^
+./imagen.h(160): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a3[] = {
+      ^
+./imagen.h(199): warning: no previous extern declaration for non-static variable 'a4' [-Wmissing-variable-declarations]
+const char a4[] = {
+           ^
+./imagen.h(199): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a4[] = {
+      ^
+./imagen.h(237): warning: no previous extern declaration for non-static variable 'a5' [-Wmissing-variable-declarations]
+const char a5[] = {
+           ^
+./imagen.h(237): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a5[] = {
+      ^
+./imagen.h(275): warning: no previous extern declaration for non-static variable 'a6' [-Wmissing-variable-declarations]
+const char a6[] = {
+           ^
+./imagen.h(275): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a6[] = {
+      ^
+./imagen.h(314): warning: no previous extern declaration for non-static variable 'a7' [-Wmissing-variable-declarations]
+const char a7[] = {
+           ^
+./imagen.h(314): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a7[] = {
+      ^
+./imagen.h(352): warning: no previous extern declaration for non-static variable 'a8' [-Wmissing-variable-declarations]
+const char a8[] = {
+           ^
+./imagen.h(352): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char a8[] = {
+      ^
+./imagen.h(391): warning: no previous extern declaration for non-static variable 'b1' [-Wmissing-variable-declarations]
+const char b1[] = {
+           ^
+./imagen.h(391): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b1[] = {
+      ^
+./imagen.h(430): warning: no previous extern declaration for non-static variable 'b2' [-Wmissing-variable-declarations]
+const char b2[] = {
+           ^
+./imagen.h(430): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b2[] = {
+      ^
+./imagen.h(469): warning: no previous extern declaration for non-static variable 'b3' [-Wmissing-variable-declarations]
+const char b3[] = {
+           ^
+./imagen.h(469): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b3[] = {
+      ^
+./imagen.h(508): warning: no previous extern declaration for non-static variable 'b4' [-Wmissing-variable-declarations]
+const char b4[] = {
+           ^
+./imagen.h(508): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b4[] = {
+      ^
+./imagen.h(547): warning: no previous extern declaration for non-static variable 'b5' [-Wmissing-variable-declarations]
+const char b5[] = {
+           ^
+./imagen.h(547): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b5[] = {
+      ^
+./imagen.h(586): warning: no previous extern declaration for non-static variable 'b6' [-Wmissing-variable-declarations]
+const char b6[] = {
+           ^
+./imagen.h(586): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b6[] = {
+      ^
+./imagen.h(625): warning: no previous extern declaration for non-static variable 'b7' [-Wmissing-variable-declarations]
+const char b7[] = {
+           ^
+./imagen.h(625): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const char b7[] = {
+      ^
+./imagen.h(664): warning: no previous extern declaration for non-static variable 'Fondo' [-Wmissing-variable-declarations]
+char Fondo[] = {
+     ^
+./imagen.h(664): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char Fondo[] = {
+^
+./imagen.h(704): warning: no newline at end of file [-Wnewline-eof]
+#endif // __imagen_H__
+                      ^
+main.c(76): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                entrada = Lectura();
+                        ~ ^~~~~~~~~
+main.c(96): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        pixa = ((imagen[i+(COLUMNAS*j)])&0x01) << 7;
+                                             ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+main.c(108): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        pixa = ((imagen[i+(COLUMNAS*j)])&0x01) << 7;
+                                             ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+main.c(123): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        imagen[i+(COLUMNAS*(j))]= ((imagen[i+(COLUMNAS*(j))]&0x7F) << 1) + pix;
+                                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+main.c(135): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        imagen[i+(COLUMNAS*(j))]= ((imagen[i+(COLUMNAS*(j))]&0x7F) << 1) + pix;
+                                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+main.c(147): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        imagen[i+(COLUMNAS*(j))]= ((imagen[i+(COLUMNAS*(j))]&0x7F) << 1) + pix;
+                                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+main.c(159): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        imagen[i+(COLUMNAS*(j))]= ((imagen[i+(COLUMNAS*(j))]&0x7F) << 1) + pix;
+                                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+main.c(171): warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+                                        imagen[i+(COLUMNAS*(j))]= ((imagen[i+(COLUMNAS*(j))]&0x7F) << 1) + pix;
+                                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+main.c(183): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(67): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        char    entrada = 0;
+                ^
+33 warnings generated.
+compiling main.c...
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=3256 RO-data=652 RW-data=504 ZI-data=608  
+".\Objects\LCD_C.axf" - 0 Error(s), 49 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Dell/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Dell/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device/Source/system_TM4C123.c
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

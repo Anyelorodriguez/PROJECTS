@@ -1,0 +1,197 @@
+#include<iostream>
+#include<stdlib.h>
+#include<fstream>
+#include<string.h>
+using namespace std;
+
+void anadirTexto();
+void crearArchivo();
+void lecturaTexto();
+void conectado();
+void crearMensaje();
+void lecturaMensaje();
+void anadirMensaje();
+
+int main(){
+	
+	int opc;
+	crearArchivo();
+	crearMensaje();
+	cout<<"Menu\n";
+	cout<<"1. Conectarse\n"<<"2. Salir\n";
+	
+	cout<<"Digite la opcion de preferencia:\n";
+	cin>>opc;
+	if(opc==1)
+	{
+		system("cls");
+
+		anadirTexto();
+		conectado();
+	}
+	else if(opc==2)
+	{
+		system("pause");
+	}
+	else
+	{
+		cout<<"No existe esa opcion \n";
+		main();
+	}
+	system("pause");
+	return 0;
+};
+ 
+void crearArchivo()//crear el archivo donde se ingresan los usuarios
+{
+	ofstream archivo;
+	archivo.open ("usuarios.txt"); //Sobreescribe el archivo.
+	archivo<<"Usuarios conectados"<<"\n";
+	archivo.close();	
+};
+
+void lecturaTexto()//lectura del archivo donde se ingresaron los usuarios
+{
+	ifstream archivo;
+	string nombreArchivo,texto;
+	
+	nombreArchivo="usuarios.txt";
+	
+	archivo.open(nombreArchivo.c_str(),ios::in); //Abrimos el archivo en modo lectura
+	
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);
+	}
+	
+	while(!archivo.eof()){ //mientras no sea final del archivo
+		getline(archivo,texto);
+		cout<<texto<<endl;
+	}
+	
+	archivo.close(); //Cerramos el archivo
+};
+
+
+void anadirTexto()//Añadir usuarios
+{
+
+	char rpt;
+	ofstream archivo;
+	string frase;
+		
+	archivo.open("usuarios.txt",ios::app); 
+	
+	if(archivo.fail())
+	{ //Si a ocurrido algun error
+		cout<<"\nNo se pudo";
+		exit(1);
+	}
+
+		fflush(stdin);
+		cout<<"\nDigite su nombre de usuario\n "<<"\n";
+		getline(cin,frase);
+		archivo<<frase;
+
+
+	
+	archivo.close(); //Cerrar el archivo
+
+
+};
+
+void conectado()//opciones de los usuarios conectados
+{
+	int opc;
+	
+	cout<<"Menu de usuario conectado\n"<<"1. Enviar mensaje\n"<<"2. Leer mensaje\n"<<"3. Ver usuarios conectados\n"<<"4. Desconectarse\n";
+	cout<<"Digite la opcion de preferencia:\n";
+	cin>>opc;	
+	
+	if(opc==1)
+	{
+		system("cls");
+		anadirMensaje();
+		conectado();
+	}
+	else if(opc==2)
+	{
+		system("cls");
+		lecturaMensaje();
+		conectado();
+	}
+	else if(opc==3)
+	{
+		system("cls");
+		lecturaTexto();
+		conectado();
+		
+	}
+	else if(opc==4)
+	{
+	    main();	
+	}
+	else
+	{
+	   cout<<"No existe esa opcion";
+	   conectado();	
+	}
+};
+
+void crearMensaje()//crear el archivo donde se ingresan los mensajes
+{
+	ofstream archivo;
+	archivo.open ("chat.txt"); //Sobreescribe el archivo.
+	archivo<<"Mensajes:"<<"\n";
+	archivo.close();	
+};
+
+void lecturaMensaje()//leer el archivo donde se ingresaron los mensajes
+{
+	ifstream archivo;
+	string nombreArchivo,texto;
+	
+	nombreArchivo="chat.txt";
+	
+	archivo.open(nombreArchivo.c_str(),ios::in); //Abrimos el archivo en modo lectura
+	
+	if(archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);
+	}
+	
+	while(!archivo.eof()){ //mientras no sea final del archivo
+		getline(archivo,texto);
+		cout<<texto<<endl;
+	}
+	
+	archivo.close(); //Cerramos el archivo
+};
+
+
+void anadirMensaje()//añadir mensajes
+{
+
+	char rpt;
+	ofstream archivo;
+	string frase;
+		
+	archivo.open("chat.txt",ios::app); 
+	
+	if(archivo.fail())
+	{ //Si a ocurrido algun error
+		cout<<"\nNo se pudo";
+		exit(1);
+	}
+
+		fflush(stdin);
+		cout<<"\nDigite el mensaje:";
+		getline(cin,frase);
+		archivo<<frase;
+
+
+	
+	archivo.close(); //Cerrar el archivo
+
+
+};

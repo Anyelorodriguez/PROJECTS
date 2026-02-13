@@ -1,0 +1,149 @@
+#include<iostream>
+#include<stdlib.h>
+#include<string.h>
+#include<fstream>
+#include<windows.h>
+
+using namespace std;
+
+void anadir();
+void lectura();
+void crear_archivo();
+void usuario();
+void usuario_lectura();
+int Ret();
+int Ret_2();
+int main()
+{
+	int i=1,opc;
+	crear_archivo();
+	usuario();
+	
+	cout<<"\nMENU\n"<<"1. Ver usuarios conectados.\n"<<"2. Chatear\n"<<"\nDigite la obcion: ";
+	cin>>opc;
+	
+	if (opc == 1)
+	{
+		usuario_lectura();
+	}
+	else if (opc == 2)
+	{
+		while (i=1)
+		{
+			Ret_2();
+			Ret();
+		}
+	}
+	system("pause");
+	return 0;
+};
+
+int Ret()
+{
+	system("cls");
+	lectura();
+	anadir();
+	Sleep(5000);
+};
+int Ret_2()
+{
+	system("cls");
+	lectura();
+	anadir();
+	Sleep(5000);
+};
+void anadir()
+{
+	ofstream archivo;
+	string texto;
+	char rpt;
+		
+	archivo.open("Chat.txt",ios::app);//Abrimos el archivo en modo añadir(app)
+		
+	if (archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);
+	}
+	do{
+		fflush(stdin);
+		cout<<"Digite una frase: ";
+		getline(cin,texto);
+		archivo<<texto<<endl;
+		
+		cout<<"Desea agregar otra frase? (s/n): ";
+		cin>>rpt;
+	}while((rpt == 'S') || (rpt == 's'));
+		
+	archivo.close();//Cerramos el archivo
+};
+void lectura()
+{
+	ifstream archivo; //lectrura
+	string texto;//Conjunto de paquete 
+	
+	archivo.open("Chat.txt",ios::in);//in = lectura. Abriendo el archivo modo lectura
+	
+	if (archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);
+	}
+	
+	while(!archivo.eof()){//Mientras no(!) sea el final del archivo (.eof= recorrer archivo)
+		getline(archivo,texto);
+		cout<<texto<<endl;
+	}
+	
+	archivo.close();//Cerramos el archivo
+	
+};
+void crear_archivo()
+{
+	ofstream archivo;// de salida
+			
+	archivo.open("Chat.txt",ios::app);
+	if (archivo.fail())
+	{
+		archivo.open("Chat.txt",ios::out);//abriendo el archivo
+		exit(1);
+    }
+	archivo.close(); //cerrar el archivo
+	
+};
+void usuario()
+{
+	ofstream archivo;// de salida
+	string Usuario;
+		
+	archivo.open("usuario.txt",ios::app);
+	if (archivo.fail())
+	{
+		archivo.open("usuario.txt",ios::out);//abriendo el archivo
+		exit(1);
+    }
+    
+		fflush(stdin);
+		cout<<"Digite su usuario: ";
+		getline(cin,Usuario);
+		archivo<<Usuario<<endl;
+		    
+	archivo.close(); //cerrar el archivo
+};
+void usuario_lectura()
+{
+	ifstream archivo; //lectrura
+	string texto;//Conjunto de paquete 
+	
+	archivo.open("usuario.txt",ios::in);//in = lectura. Abriendo el archivo modo lectura
+	
+	if (archivo.fail()){
+		cout<<"No se pudo abrir el archivo";
+		exit(1);
+	}
+	
+	while(!archivo.eof()){//Mientras no(!) sea el final del archivo (.eof= recorrer archivo)
+		getline(archivo,texto);
+		cout<<texto<<endl;
+	}
+	archivo.close();//Cerramos el archivo
+	
+};
